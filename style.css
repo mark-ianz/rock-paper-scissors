@@ -10,13 +10,17 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 2vh;
 }
 
 .title {
   font-weight: bold;
   text-align: center;
   font-size: 8vw;
+}
+
+.select-move {
+  font-size: 5vw;
 }
 
 .play-buttons-container,.reset-button-container {
@@ -64,7 +68,8 @@ body {
   border-width: 1px;
   border-radius: 5px;
   width: 30vw;
-  height: 8vh;
+  height: 5vh;
+  font-size: 3vw;
 }
 
 .button-images {
@@ -74,6 +79,8 @@ body {
 
 .pop-ups {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -131,3 +138,78 @@ body {
 .move {
   font-size: 5vw;
 }
+
+.hr {
+  border-bottom-style: solid;
+  border-width: 1px;
+  width: 100%;
+}
+
+@media (min-width: 570px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container {
+    gap: 1vh;
+  }
+  .title {
+    font-size: 4vh;
+  }
+  .select-move {
+    font-size: 4vh;
+  }
+  .play-buttons,.reset-button {
+    width: 23vh;
+    height: 23vh;
+  }
+  .score {
+    font-size: 2vh;
+  }
+  
+  .reset-button {
+    width: 30vh;
+    height: 8vh;
+  }
+  
+  .button-images {
+    width: 10vh;
+    height: 10vh;
+  }
+  .win-lose {
+    font-size: 4vh;
+  }
+  .versus-image {
+    width: 5vh;
+  }
+  
+  .user-move-image,.computer-move-image {
+    width: 15vh;
+  }
+  .js-user-move,.js-computer-move {
+    width: 27vh;
+    height: 27vh;
+  }
+  .move {
+    font-size: 3vh;
+  }
+  .result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1vh 1vh 1vh 1vh;
+  }
+  .result {
+    font-size: 3vh;
+  }
+  .reset-button {
+    font-size: 3vh;
+    width: 25vh;
+    height: 5vh;
+  }
+}
+
