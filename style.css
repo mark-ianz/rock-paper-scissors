@@ -10,13 +10,13 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 3vh;
 }
 
 .title {
   font-weight: bold;
   text-align: center;
-  font-size: 24px;
+  font-size: 8vw;
 }
 
 .play-buttons-container,.reset-button-container {
@@ -27,7 +27,7 @@ body {
 }
 
 .play-buttons-container {
-  gap: 5px;
+  gap: 2vw;
 }
 
 .reset-button-container {
@@ -45,13 +45,26 @@ body {
   cursor: pointer;
   background-color: rgb(246, 246, 246);
   outline: none;
+  transition: 200ms;
+}
+
+.play-buttons:hover ,.reset-button:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.play-buttons:active ,.reset-button:active {
+  opacity: .7;
+}
+
+.score {
+  font-size: 5vw;
 }
 
 .reset-button {
   border-width: 1px;
   border-radius: 5px;
-  width: 100px;
-  height: 30px;
+  width: 30vw;
+  height: 8vh;
 }
 
 .button-images {
@@ -93,6 +106,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2vh;
 }
 
 .versus-image {

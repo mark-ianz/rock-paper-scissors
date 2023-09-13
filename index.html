@@ -28,7 +28,7 @@
         <img src="./images/scissors-emoji.png" class="button-images">
       </button>
     </div>
-    <p class="js-score"></p>
+    <p class="js-score score"></p>
     <div class="reset-button-container">
       <button class="reset-button" onclick="
         resetScore ();
@@ -158,19 +158,6 @@
         .innerHTML = `The score was reset.`;
       document.querySelector ('.js-result')
         .innerHTML = `The score was reset.`;
-
-      /* document.querySelector ('.js-moves')
-        .innerHTML = ``;
-      document.querySelector ('.result-container')
-        .innerHTML = `The score was reset.`;
-      document.querySelector ('.js-result')
-        .innerHTML = `The score was reset.`;
-      document.querySelector ('.js-user-move')
-          .innerHTML = '';
-      document.querySelector ('.js-computer-move')
-      .innerHTML = '';
-      document.querySelector ('.pop-ups')
-      .innerHTML = ''; */
     }
     function displayPopUps () {
       document.querySelector ('.js-pop-ups')
